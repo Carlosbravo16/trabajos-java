@@ -1,9 +1,10 @@
+package retos;
 import java.util.Scanner;
-public class Reto3 {
+public class Reto3_7 {
     public static void main(String[] args) {
         Scanner eleccion=new Scanner(System.in);
        
-        int aleatorio=0, respuesta, apuesta, acumulador=0;
+        int aleatorio=0, respuesta, apuesta, acumulador=0, contador=0;
         char co=1;
         System.out.println("Ingrese el valor que desesa recargar");
         acumulador=eleccion.nextInt();
@@ -17,10 +18,12 @@ public class Reto3 {
                 if(aleatorio==1 && respuesta==1){
                     System.out.println("Salio cara, usted escogio cara, ¡¡Ganaste!!...");
                     acumulador=acumulador+apuesta;
+                    contador=contador+1;
                 }
                 else if(aleatorio==1 && respuesta==2){
                     System.out.println("Salio cara, usted escogio sello, ¡¡Perdiste!!...");
                     acumulador=acumulador-apuesta;
+                    contador=contador+1;
                     if(acumulador<=0){
                         System.out.println("Saldo es insuficiente.");
                         break;
@@ -29,10 +32,12 @@ public class Reto3 {
                 else if(aleatorio==2 && respuesta==2){
                     System.out.println("Salio sello, usted escogio sello, ¡¡Ganaste!!...");
                     acumulador=acumulador+apuesta;
+                    contador=contador+1;
                 }
                 else if(aleatorio==2 && respuesta==1){
                     System.out.println("Salio sello, usted escogio cara, ¡¡Perdiste!!...");
                     acumulador=acumulador-apuesta;
+                    contador=contador+1;
                     if(acumulador<=0){
                         System.out.println("Saldo insuficiente.");
                         break;

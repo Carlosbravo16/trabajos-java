@@ -1,3 +1,4 @@
+package ejercicios;
 import java.util.*;
 
 
@@ -45,7 +46,7 @@ public class CajaRegistradora {
             System.out.println("opcion no valida"); 
             break;
         }
-
+        leer.close();
 
     valor.close();
     }

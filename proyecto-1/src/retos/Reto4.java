@@ -1,3 +1,4 @@
+package retos;
 
 import java.util.Scanner;
 public class Reto4 {
@@ -26,7 +27,7 @@ public class Reto4 {
         else{
             System.out.println("hay un error");}
 
-        
+        leer.close();
     }
     
     

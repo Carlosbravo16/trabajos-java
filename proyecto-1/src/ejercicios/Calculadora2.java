@@ -1,3 +1,4 @@
+package ejercicios;
 import java.util.*;
 
 public class Calculadora2 {
