@@ -20,6 +20,8 @@ public class Ficha {
         laura.materia=leer.nextLine();
         System.out.println("laura tiene "+laura.ficha+"años y estudia en la sede"+laura.materia);
         
+        leer.close();
+        
     }
     
     

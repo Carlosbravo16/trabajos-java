@@ -27,6 +27,8 @@ public void cambiarnombreAprendiz(){
     nombre=leer.nextLine();
 
     System.out.println("el nuevo nombre es "+nombre);
+    
+    leer.close();
 
 }
 }

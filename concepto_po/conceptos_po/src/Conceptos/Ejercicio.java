@@ -1,7 +1,7 @@
 package Conceptos;
 import java.util.Scanner;
 
-import javax.swing.SpringLayout;
+
 
 import Sena.Aprendiz;
 
@@ -29,6 +29,8 @@ public class Ejercicio {
         mipersona.materia=leer.nextLine();
 
         System.out.println("carlos tiene una identificacin"+mipersona.id+"se encuentra en la ficha"+mipersona.ficha);
+
+        leer.close();
         
     }
     
