@@ -5,11 +5,11 @@ public class Persona {
 
     Scanner leer = new Scanner(System.in);
         int documento, edad;
-        String tipoDoc, nombre, apellido, sexo;
+        String tipoDoc, nombre, apellido, sexo, resultado;
         Double peso, estatura;
         Double pesoActual;
 
-        public void pedirDatos() {
+        /*public void pedirDatos() {
             
 
             System.out.println("Digite su tipo de documento CC, TI, PP");
@@ -41,7 +41,7 @@ public class Persona {
             leer.nextLine();
             estatura = leer.nextDouble();
 
-        }
+        } */
         
         public void mostrarPersona() {
 
@@ -49,8 +49,9 @@ public class Persona {
                     + " numero: " + documento + " de genero " + sexo + " tiene un peso de: " + peso + " Kg, Mide "
                     + estatura + " Mts y tiene " + edad + " Años");
         }
+
         
-        public void calcularImc() {
+        /*public void calcularImc() {
 
             pesoActual = peso /(Math.pow(estatura, 2));
 
@@ -62,6 +63,24 @@ public class Persona {
             } else  {
                 System.out.println("Tiene sobrepeso");
             }
+        }*/
+        public String calcularImc() {
+
+            pesoActual = peso /(Math.pow(estatura, 2));
+
+            System.out.println(pesoActual);
+
+            if (pesoActual < 20) {
+                resultado="pesobajo";
+            } 
+            else if (pesoActual ==20 || pesoActual <=25) {
+                resultado="pesoideal";
+              
+            } 
+            else  {
+                resultado="sobrepeso";
+            }
+            return resultado;
         }
         
         public void mayorEdad() {

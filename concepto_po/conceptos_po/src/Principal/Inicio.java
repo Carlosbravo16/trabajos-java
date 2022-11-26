@@ -2,13 +2,13 @@ package Principal;
 
 import java.util.Scanner;
 
-import Salud.Reto2;
+import Salud.Persona;
 
 public class Inicio {
     public static void main(String[] args) {
         Scanner leer=new Scanner(System.in);
         //instanciar y crear objeto
-        Reto2 objeto =new Reto2();
+        Persona objeto =new Persona();
 
         objeto.pedirDatos();
         objeto.mostrarPersona();
